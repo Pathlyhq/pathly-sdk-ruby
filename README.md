@@ -36,6 +36,15 @@ scenario = client.create_scenario(
   tags: %w[prod payment]
 )
 puts scenario["id"]
+chain = client.create_scenario(
+  name: "Login then /me",
+  intervalSec: 300,
+  httpChain: [
+    { method: "POST", url: "https://api.example.com/login", assertStatus: 200 },
+    { method: "GET", url: "https://api.example.com/me", assertStatus: 200 },
+  ]
+)
+puts chain["id"]
 ```
 
 
