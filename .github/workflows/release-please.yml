@@ -1,0 +1,21 @@
+# Keeps a "chore(main): release x.y.z" PR up to date (CHANGELOG.md + version).
+# Merging it creates the vX.Y.Z tag and the GitHub release.
+name: Release
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: googleapis/release-please-action@v4
+        with:
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json

@@ -22,7 +22,6 @@ __pycache__/
 htmlcov/
 coverage/
 dist/
-lib/
 bin/
 *.egg-info/
 .DS_Store

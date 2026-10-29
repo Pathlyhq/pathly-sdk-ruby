@@ -1,0 +1,33 @@
+name: Bug
+description: Something does not work as expected
+title: "[Bug] "
+labels: ["type: bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: One sentence, the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      value: |
+        - **GIVEN**:
+        - **WHEN**:
+        - **THEN** (expected):
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: v0.1.0
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Minimal, cleaned excerpt. No API token, IP or customer data.
+      render: text

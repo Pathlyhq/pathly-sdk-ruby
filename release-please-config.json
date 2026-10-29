@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "include-component-in-tag": false,
+  "bootstrap-sha": "049b7ef272fcfb6f21dbd5891e74dbeea9c67aeb",
+  "packages": {
+    ".": {
+      "release-type": "ruby",
+      "changelog-path": "CHANGELOG.md",
+      "bump-minor-pre-major": true,
+      "package-name": "pathly",
+      "version-file": "lib/pathly/version.rb"
+    }
+  }
+}
