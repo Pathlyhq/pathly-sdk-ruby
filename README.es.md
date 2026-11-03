@@ -105,7 +105,7 @@ Se exige cobertura al **100%** (SimpleCov).
 | [pathly-sdk-python](https://github.com/pathlyhq/pathly-sdk-python) | Python `pathly` |
 | [pathly-sdk-typescript](https://github.com/pathlyhq/pathly-sdk-typescript) | `@pathlyhq/sdk` |
 | [pathly-postman](https://github.com/pathlyhq/pathly-postman) | Postman / OpenAPI explorers |
-| [pathly-terraform-provider](https://github.com/pathlyhq/pathly-terraform-provider) | Terraform / OpenTofu |
+| [terraform-provider-pathly](https://github.com/Pathlyhq/terraform-provider-pathly) | Terraform / OpenTofu |
 
 Referencia API: [pathlyhq.com/es/developers](https://pathlyhq.com/es/developers).
 

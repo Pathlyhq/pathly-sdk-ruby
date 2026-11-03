@@ -1,4 +1,4 @@
-# Same checks as .gitlab-ci.yml (rspec).
+# CI checks (rspec).
 name: CI
 
 on:
